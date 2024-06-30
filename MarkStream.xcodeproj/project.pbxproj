@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */; };
+		6ADA4F322C310C540057C65D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F312C310C540057C65D /* Persistence.swift */; };
+		6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */; };
+		6ADA4F372C310C540057C65D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F362C310C540057C65D /* ContentView.swift */; };
+		6ADA4F392C310C550057C65D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA4F382C310C550057C65D /* Assets.xcassets */; };
+		6ADA4F3D2C310C550057C65D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA4F3C2C310C550057C65D /* Preview Assets.xcassets */; };
+		6ADA4F472C310C560057C65D /* MarkStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F462C310C560057C65D /* MarkStreamTests.swift */; };
+		6ADA4F512C310C560057C65D /* MarkStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F502C310C560057C65D /* MarkStreamUITests.swift */; };
+		6ADA4F532C310C560057C65D /* MarkStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ADA4F432C310C560057C65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADA4F242C310C540057C65D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ADA4F2B2C310C540057C65D;
+			remoteInfo = MarkStream;
+		};
+		6ADA4F4D2C310C560057C65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ADA4F242C310C540057C65D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ADA4F2B2C310C540057C65D;
+			remoteInfo = MarkStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ADA4F2C2C310C540057C65D /* MarkStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamApp.swift; sourceTree = "<group>"; };
+		6ADA4F312C310C540057C65D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6ADA4F342C310C540057C65D /* MarkStream.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarkStream.xcdatamodel; sourceTree = "<group>"; };
+		6ADA4F362C310C540057C65D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6ADA4F382C310C550057C65D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ADA4F3A2C310C550057C65D /* MarkStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkStream.entitlements; sourceTree = "<group>"; };
+		6ADA4F3C2C310C550057C65D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ADA4F422C310C560057C65D /* MarkStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADA4F462C310C560057C65D /* MarkStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamTests.swift; sourceTree = "<group>"; };
+		6ADA4F4C2C310C560057C65D /* MarkStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADA4F502C310C560057C65D /* MarkStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamUITests.swift; sourceTree = "<group>"; };
+		6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ADA4F292C310C540057C65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F3F2C310C560057C65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F492C310C560057C65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ADA4F232C310C540057C65D = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F2E2C310C540057C65D /* MarkStream */,
+				6ADA4F452C310C560057C65D /* MarkStreamTests */,
+				6ADA4F4F2C310C560057C65D /* MarkStreamUITests */,
+				6ADA4F2D2C310C540057C65D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ADA4F2D2C310C540057C65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F2C2C310C540057C65D /* MarkStream.app */,
+				6ADA4F422C310C560057C65D /* MarkStreamTests.xctest */,
+				6ADA4F4C2C310C560057C65D /* MarkStreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ADA4F2E2C310C540057C65D /* MarkStream */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */,
+				6ADA4F312C310C540057C65D /* Persistence.swift */,
+				6ADA4F362C310C540057C65D /* ContentView.swift */,
+				6ADA4F382C310C550057C65D /* Assets.xcassets */,
+				6ADA4F3A2C310C550057C65D /* MarkStream.entitlements */,
+				6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */,
+				6ADA4F3B2C310C550057C65D /* Preview Content */,
+			);
+			path = MarkStream;
+			sourceTree = "<group>";
+		};
+		6ADA4F3B2C310C550057C65D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F3C2C310C550057C65D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ADA4F452C310C560057C65D /* MarkStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F462C310C560057C65D /* MarkStreamTests.swift */,
+			);
+			path = MarkStreamTests;
+			sourceTree = "<group>";
+		};
+		6ADA4F4F2C310C560057C65D /* MarkStreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F502C310C560057C65D /* MarkStreamUITests.swift */,
+				6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */,
+			);
+			path = MarkStreamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ADA4F2B2C310C540057C65D /* MarkStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ADA4F562C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStream" */;
+			buildPhases = (
+				6ADA4F282C310C540057C65D /* Sources */,
+				6ADA4F292C310C540057C65D /* Frameworks */,
+				6ADA4F2A2C310C540057C65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkStream;
+			productName = MarkStream;
+			productReference = 6ADA4F2C2C310C540057C65D /* MarkStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ADA4F412C310C560057C65D /* MarkStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ADA4F592C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamTests" */;
+			buildPhases = (
+				6ADA4F3E2C310C560057C65D /* Sources */,
+				6ADA4F3F2C310C560057C65D /* Frameworks */,
+				6ADA4F402C310C560057C65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ADA4F442C310C560057C65D /* PBXTargetDependency */,
+			);
+			name = MarkStreamTests;
+			productName = MarkStreamTests;
+			productReference = 6ADA4F422C310C560057C65D /* MarkStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6ADA4F4B2C310C560057C65D /* MarkStreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ADA4F5C2C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamUITests" */;
+			buildPhases = (
+				6ADA4F482C310C560057C65D /* Sources */,
+				6ADA4F492C310C560057C65D /* Frameworks */,
+				6ADA4F4A2C310C560057C65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ADA4F4E2C310C560057C65D /* PBXTargetDependency */,
+			);
+			name = MarkStreamUITests;
+			productName = MarkStreamUITests;
+			productReference = 6ADA4F4C2C310C560057C65D /* MarkStreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ADA4F242C310C540057C65D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6ADA4F2B2C310C540057C65D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					6ADA4F412C310C560057C65D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6ADA4F2B2C310C540057C65D;
+					};
+					6ADA4F4B2C310C560057C65D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6ADA4F2B2C310C540057C65D;
+					};
+				};
+			};
+			buildConfigurationList = 6ADA4F272C310C540057C65D /* Build configuration list for PBXProject "MarkStream" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ADA4F232C310C540057C65D;
+			productRefGroup = 6ADA4F2D2C310C540057C65D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ADA4F2B2C310C540057C65D /* MarkStream */,
+				6ADA4F412C310C560057C65D /* MarkStreamTests */,
+				6ADA4F4B2C310C560057C65D /* MarkStreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ADA4F2A2C310C540057C65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA4F3D2C310C550057C65D /* Preview Assets.xcassets in Resources */,
+				6ADA4F392C310C550057C65D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F402C310C560057C65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F4A2C310C560057C65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ADA4F282C310C540057C65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */,
+				6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */,
+				6ADA4F372C310C540057C65D /* ContentView.swift in Sources */,
+				6ADA4F322C310C540057C65D /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F3E2C310C560057C65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA4F472C310C560057C65D /* MarkStreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA4F482C310C560057C65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA4F512C310C560057C65D /* MarkStreamUITests.swift in Sources */,
+				6ADA4F532C310C560057C65D /* MarkStreamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ADA4F442C310C560057C65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ADA4F2B2C310C540057C65D /* MarkStream */;
+			targetProxy = 6ADA4F432C310C560057C65D /* PBXContainerItemProxy */;
+		};
+		6ADA4F4E2C310C560057C65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ADA4F2B2C310C540057C65D /* MarkStream */;
+			targetProxy = 6ADA4F4D2C310C560057C65D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6ADA4F542C310C560057C65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6ADA4F552C310C560057C65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6ADA4F572C310C560057C65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarkStream/MarkStream.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarkStream/Preview Content\"";
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ADA4F582C310C560057C65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarkStream/MarkStream.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarkStream/Preview Content\"";
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6ADA4F5A2C310C560057C65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkStream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarkStream";
+			};
+			name = Debug;
+		};
+		6ADA4F5B2C310C560057C65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkStream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarkStream";
+			};
+			name = Release;
+		};
+		6ADA4F5D2C310C560057C65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkStream;
+			};
+			name = Debug;
+		};
+		6ADA4F5E2C310C560057C65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88S7TP3NVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkStream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ADA4F272C310C540057C65D /* Build configuration list for PBXProject "MarkStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADA4F542C310C560057C65D /* Debug */,
+				6ADA4F552C310C560057C65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ADA4F562C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADA4F572C310C560057C65D /* Debug */,
+				6ADA4F582C310C560057C65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ADA4F592C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADA4F5A2C310C560057C65D /* Debug */,
+				6ADA4F5B2C310C560057C65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ADA4F5C2C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADA4F5D2C310C560057C65D /* Debug */,
+				6ADA4F5E2C310C560057C65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ADA4F342C310C540057C65D /* MarkStream.xcdatamodel */,
+			);
+			currentVersion = 6ADA4F342C310C540057C65D /* MarkStream.xcdatamodel */;
+			path = MarkStream.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6ADA4F242C310C540057C65D /* Project object */;
+}
