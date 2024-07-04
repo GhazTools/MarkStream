@@ -51,7 +51,6 @@ class TokenGranterTests: XCTestCase {
     func testSetUsernameAndPassword() {
         let setResult = tokenGranter.set_username_and_password(username: self.username, password: self.password)
         
-        print("TEST HERE", self.username, self.password)
         XCTAssertTrue(setResult, "set_username_and_password should return true")
     }
 

@@ -12,13 +12,9 @@ jobs:
         with:
           xcode-version: "15.0.1" # Specify your Xcode version here
 
-      - name: Install Dependencies
-        run: |
-          pod install
-
       - name: Run Tests
         env:
           APP_USERNAME: ${{ secrets.APP_USERNAME }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: |
-          xcodebuild test -workspace MarkStream.xcworkspace -scheme MarkStreamTests -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0' -enableCodeCoverage YES
+          xcodebuild test -workspace MarkStream.xcworkspace -scheme MarkStreamTests -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0' -enableCodeCoverage YES -allowProvisioningUpdates
