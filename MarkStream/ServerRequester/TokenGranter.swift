@@ -61,6 +61,10 @@ class TokenGranter {
     
     
     public func set_username_and_password(username: String, password: String) -> Bool {
+        if(self.username().isEmpty || self.password().isEmpty){
+            return false;
+        }
+        
         self._username = username;
         self._password = password;
         

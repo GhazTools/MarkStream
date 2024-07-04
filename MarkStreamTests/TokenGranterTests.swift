@@ -21,9 +21,11 @@ class TokenGranterTests: XCTestCase {
         
         self.username = ProcessInfo.processInfo.environment["APP_USERNAME"] ?? "";
         self.password = ProcessInfo.processInfo.environment["APP_PASSWORD"] ?? "";
-
+        
+        // TURN ON FOR LOCLA TESTING, ENABLE loca.confog targets for markstream
 //        if(self.username.isEmpty){
-//            let configPath = Bundle.main.path(forResource: "local", ofType: "config") // Adjust the path as necessary
+//            let configPath = Bundle.main.path(forResource: "local", ofType: "config") //
+//            
 //            if let configPath = configPath, let configContents = try? String(contentsOfFile: configPath) {
 //                let lines = configContents.split(separator: "\n")
 //                var configDict = [String: String]()
@@ -49,8 +51,7 @@ class TokenGranterTests: XCTestCase {
     func testSetUsernameAndPassword() {
         let setResult = tokenGranter.set_username_and_password(username: self.username, password: self.password)
         
-        print("TEST HERE", self.username, self.password
-        )
+        print("TEST HERE", self.username, self.password)
         XCTAssertTrue(setResult, "set_username_and_password should return true")
     }
 

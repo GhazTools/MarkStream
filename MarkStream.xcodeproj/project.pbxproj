@@ -15,6 +15,7 @@
 		6A8BC28E2C36418E00200875 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC28D2C36418E00200875 /* MarkdownView.swift */; };
 		6A8BC2912C3651B000200875 /* ObsidianRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */; };
 		6A8BC2922C3651B300200875 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2872C33A7FE00200875 /* KeychainManager.swift */; };
+		6A8BC2992C365AF100200875 /* TokenGranterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF76F4A2C311468000F58B8 /* TokenGranterTests.swift */; };
 		6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */; };
 		6ADA4F322C310C540057C65D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F312C310C540057C65D /* Persistence.swift */; };
 		6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */; };
@@ -26,7 +27,6 @@
 		6ADA4F532C310C560057C65D /* MarkStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */; };
 		6ADA4F612C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
 		6ADA4F622C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
-		6AF76F4B2C311468000F58B8 /* TokenGranterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF76F4A2C311468000F58B8 /* TokenGranterTests.swift */; };
 		DBF54C8F88CE1A6935537536 /* Pods_MarkStreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307F8E4592169F875B6DB278 /* Pods_MarkStreamTests.framework */; };
 		DC0AAF555E8BF0FC918EE8BE /* Pods_MarkStream_MarkStreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27809D0FB8BF2A33A1821AF /* Pods_MarkStream_MarkStreamUITests.framework */; };
 /* End PBXBuildFile section */
@@ -484,8 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8BC2992C365AF100200875 /* TokenGranterTests.swift in Sources */,
 				6ADA4F472C310C560057C65D /* MarkStreamTests.swift in Sources */,
-				6AF76F4B2C311468000F58B8 /* TokenGranterTests.swift in Sources */,
 				6ADA4F622C310E5A0057C65D /* TokenGranter.swift in Sources */,
 				6A8BC2912C3651B000200875 /* ObsidianRequester.swift in Sources */,
 				6A8BC2922C3651B300200875 /* KeychainManager.swift in Sources */,
