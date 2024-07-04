@@ -100,12 +100,7 @@ class TokenGranter {
     private func make_grant_access_token_rquest() async -> Bool {
         let grantTokenRequest = GrantTokenRequest(username: self._username, password: self._password, bool: false)
         let grantTokenUrl: String = "\(self._token_granter_url)/token/grant"
-        
-        print(grantTokenUrl)
-        print(self._username)
-        print(self._password)
-        print(grantTokenRequest)
-        
+                
         
         return await withCheckedContinuation { continuation in
             AF.request(

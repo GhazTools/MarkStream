@@ -81,4 +81,5 @@ DerivedData/
 *.swp
 *~
 *.bak
-local.config
+*/*.config
+MarkStream/local.config
