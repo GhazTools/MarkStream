@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF29AE905B9506859D1FC79 /* Pods_MarkStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54FCEA6ED7B3EFC2162CFD /* Pods_MarkStream.framework */; };
+		6A8BC2842C337D3B00200875 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2832C337D3B00200875 /* MainView.swift */; };
+		6A8BC2882C33A7FE00200875 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2872C33A7FE00200875 /* KeychainManager.swift */; };
+		6A8BC28A2C33AF3500200875 /* ObsidianRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */; };
+		6A8BC28C2C363C2F00200875 /* ObsidianFileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC28B2C363C2F00200875 /* ObsidianFileContentView.swift */; };
+		6A8BC28E2C36418E00200875 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC28D2C36418E00200875 /* MarkdownView.swift */; };
 		6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */; };
 		6ADA4F322C310C540057C65D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F312C310C540057C65D /* Persistence.swift */; };
 		6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */; };
-		6ADA4F372C310C540057C65D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F362C310C540057C65D /* ContentView.swift */; };
+		6ADA4F372C310C540057C65D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F362C310C540057C65D /* LoginView.swift */; };
 		6ADA4F392C310C550057C65D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA4F382C310C550057C65D /* Assets.xcassets */; };
 		6ADA4F3D2C310C550057C65D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA4F3C2C310C550057C65D /* Preview Assets.xcassets */; };
 		6ADA4F472C310C560057C65D /* MarkStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F462C310C560057C65D /* MarkStreamTests.swift */; };
 		6ADA4F512C310C560057C65D /* MarkStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F502C310C560057C65D /* MarkStreamUITests.swift */; };
 		6ADA4F532C310C560057C65D /* MarkStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */; };
+		6ADA4F612C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
+		6ADA4F622C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
+		6AF76F4B2C311468000F58B8 /* TokenGranterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF76F4A2C311468000F58B8 /* TokenGranterTests.swift */; };
+		DBF54C8F88CE1A6935537536 /* Pods_MarkStreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307F8E4592169F875B6DB278 /* Pods_MarkStreamTests.framework */; };
+		DC0AAF555E8BF0FC918EE8BE /* Pods_MarkStream_MarkStreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27809D0FB8BF2A33A1821AF /* Pods_MarkStream_MarkStreamUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +47,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15AA06276152C7CEDBAC5B4F /* Pods-MarkStreamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStreamTests.debug.xcconfig"; path = "Target Support Files/Pods-MarkStreamTests/Pods-MarkStreamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		307F8E4592169F875B6DB278 /* Pods_MarkStreamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkStreamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B428BFD14EBCAE45E4E651 /* Pods-MarkStream-MarkStreamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream-MarkStreamUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A54FCEA6ED7B3EFC2162CFD /* Pods_MarkStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8BC2832C337D3B00200875 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6A8BC2872C33A7FE00200875 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianRequester.swift; sourceTree = "<group>"; };
+		6A8BC28B2C363C2F00200875 /* ObsidianFileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianFileContentView.swift; sourceTree = "<group>"; };
+		6A8BC28D2C36418E00200875 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 		6ADA4F2C2C310C540057C65D /* MarkStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamApp.swift; sourceTree = "<group>"; };
 		6ADA4F312C310C540057C65D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6ADA4F342C310C540057C65D /* MarkStream.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarkStream.xcdatamodel; sourceTree = "<group>"; };
-		6ADA4F362C310C540057C65D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6ADA4F362C310C540057C65D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6ADA4F382C310C550057C65D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADA4F3A2C310C550057C65D /* MarkStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkStream.entitlements; sourceTree = "<group>"; };
 		6ADA4F3C2C310C550057C65D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +69,15 @@
 		6ADA4F4C2C310C560057C65D /* MarkStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADA4F502C310C560057C65D /* MarkStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamUITests.swift; sourceTree = "<group>"; };
 		6ADA4F522C310C560057C65D /* MarkStreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6ADA4F602C310E5A0057C65D /* TokenGranter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenGranter.swift; sourceTree = "<group>"; };
+		6AF76F4A2C311468000F58B8 /* TokenGranterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenGranterTests.swift; sourceTree = "<group>"; };
+		6AF76F4C2C311608000F58B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF76F502C311611000F58B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		806582BC9DF8465D37EAE670 /* Pods-MarkStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream.debug.xcconfig"; path = "Target Support Files/Pods-MarkStream/Pods-MarkStream.debug.xcconfig"; sourceTree = "<group>"; };
+		821F68B22391712D4EE2D7BE /* Pods-MarkStream-MarkStreamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream-MarkStreamUITests.release.xcconfig"; path = "Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A182CC4C7CB8942A6458E17E /* Pods-MarkStreamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStreamTests.release.xcconfig"; path = "Target Support Files/Pods-MarkStreamTests/Pods-MarkStreamTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF9879899CFE69097BE6A6C4 /* Pods-MarkStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream.release.xcconfig"; path = "Target Support Files/Pods-MarkStream/Pods-MarkStream.release.xcconfig"; sourceTree = "<group>"; };
+		D27809D0FB8BF2A33A1821AF /* Pods_MarkStream_MarkStreamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkStream_MarkStreamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF29AE905B9506859D1FC79 /* Pods_MarkStream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF54C8F88CE1A6935537536 /* Pods_MarkStreamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +101,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0AAF555E8BF0FC918EE8BE /* Pods_MarkStream_MarkStreamUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EFEB3CD4F82E1E41E4D2F29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				806582BC9DF8465D37EAE670 /* Pods-MarkStream.debug.xcconfig */,
+				AF9879899CFE69097BE6A6C4 /* Pods-MarkStream.release.xcconfig */,
+				48B428BFD14EBCAE45E4E651 /* Pods-MarkStream-MarkStreamUITests.debug.xcconfig */,
+				821F68B22391712D4EE2D7BE /* Pods-MarkStream-MarkStreamUITests.release.xcconfig */,
+				15AA06276152C7CEDBAC5B4F /* Pods-MarkStreamTests.debug.xcconfig */,
+				A182CC4C7CB8942A6458E17E /* Pods-MarkStreamTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A8BC2852C33A65F00200875 /* MainEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BC2832C337D3B00200875 /* MainView.swift */,
+				6A8BC28B2C363C2F00200875 /* ObsidianFileContentView.swift */,
+				6ADA4F362C310C540057C65D /* LoginView.swift */,
+				6A8BC28D2C36418E00200875 /* MarkdownView.swift */,
+			);
+			path = MainEntryView;
+			sourceTree = "<group>";
+		};
+		6A8BC2862C33A7EF00200875 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6A8BC2872C33A7FE00200875 /* KeychainManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		6ADA4F232C310C540057C65D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,8 @@
 				6ADA4F452C310C560057C65D /* MarkStreamTests */,
 				6ADA4F4F2C310C560057C65D /* MarkStreamUITests */,
 				6ADA4F2D2C310C540057C65D /* Products */,
+				1EFEB3CD4F82E1E41E4D2F29 /* Pods */,
+				E11114792E1B23E2065E0A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +165,14 @@
 		6ADA4F2E2C310C540057C65D /* MarkStream */ = {
 			isa = PBXGroup;
 			children = (
+				6A8BC2852C33A65F00200875 /* MainEntryView */,
 				6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */,
 				6ADA4F312C310C540057C65D /* Persistence.swift */,
-				6ADA4F362C310C540057C65D /* ContentView.swift */,
 				6ADA4F382C310C550057C65D /* Assets.xcassets */,
 				6ADA4F3A2C310C550057C65D /* MarkStream.entitlements */,
 				6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */,
+				6ADA4F5F2C310E3C0057C65D /* ServerRequester */,
+				6A8BC2862C33A7EF00200875 /* Utils */,
 				6ADA4F3B2C310C550057C65D /* Preview Content */,
 			);
 			path = MarkStream;
@@ -122,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				6ADA4F462C310C560057C65D /* MarkStreamTests.swift */,
+				6AF76F4A2C311468000F58B8 /* TokenGranterTests.swift */,
 			);
 			path = MarkStreamTests;
 			sourceTree = "<group>";
@@ -135,6 +204,27 @@
 			path = MarkStreamUITests;
 			sourceTree = "<group>";
 		};
+		6ADA4F5F2C310E3C0057C65D /* ServerRequester */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA4F602C310E5A0057C65D /* TokenGranter.swift */,
+				6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */,
+			);
+			path = ServerRequester;
+			sourceTree = "<group>";
+		};
+		E11114792E1B23E2065E0A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AF76F502C311611000F58B8 /* Alamofire.framework */,
+				6AF76F4C2C311608000F58B8 /* Alamofire.framework */,
+				5A54FCEA6ED7B3EFC2162CFD /* Pods_MarkStream.framework */,
+				D27809D0FB8BF2A33A1821AF /* Pods_MarkStream_MarkStreamUITests.framework */,
+				307F8E4592169F875B6DB278 /* Pods_MarkStreamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ADA4F562C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStream" */;
 			buildPhases = (
+				D3AE2377E2BDFE97275434A0 /* [CP] Check Pods Manifest.lock */,
 				6ADA4F282C310C540057C65D /* Sources */,
 				6ADA4F292C310C540057C65D /* Frameworks */,
 				6ADA4F2A2C310C540057C65D /* Resources */,
+				035B48C4D538C95A8DECB1EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ADA4F592C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamTests" */;
 			buildPhases = (
+				BA7C7C40894A9B481BDE1CF8 /* [CP] Check Pods Manifest.lock */,
 				6ADA4F3E2C310C560057C65D /* Sources */,
 				6ADA4F3F2C310C560057C65D /* Frameworks */,
 				6ADA4F402C310C560057C65D /* Resources */,
@@ -177,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ADA4F5C2C310C560057C65D /* Build configuration list for PBXNativeTarget "MarkStreamUITests" */;
 			buildPhases = (
+				BBA20EE4F0D5F7E0DDF2744D /* [CP] Check Pods Manifest.lock */,
 				6ADA4F482C310C560057C65D /* Sources */,
 				6ADA4F492C310C560057C65D /* Frameworks */,
 				6ADA4F4A2C310C560057C65D /* Resources */,
+				114037B36D56C962B986CAF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,14 +355,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		035B48C4D538C95A8DECB1EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkStream/Pods-MarkStream-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkStream/Pods-MarkStream-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarkStream/Pods-MarkStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		114037B36D56C962B986CAF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7C7C40894A9B481BDE1CF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkStreamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA20EE4F0D5F7E0DDF2744D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkStream-MarkStreamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3AE2377E2BDFE97275434A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6ADA4F282C310C540057C65D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADA4F612C310E5A0057C65D /* TokenGranter.swift in Sources */,
+				6A8BC2842C337D3B00200875 /* MainView.swift in Sources */,
+				6A8BC2882C33A7FE00200875 /* KeychainManager.swift in Sources */,
+				6A8BC28E2C36418E00200875 /* MarkdownView.swift in Sources */,
+				6A8BC28A2C33AF3500200875 /* ObsidianRequester.swift in Sources */,
 				6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */,
+				6A8BC28C2C363C2F00200875 /* ObsidianFileContentView.swift in Sources */,
 				6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */,
-				6ADA4F372C310C540057C65D /* ContentView.swift in Sources */,
+				6ADA4F372C310C540057C65D /* LoginView.swift in Sources */,
 				6ADA4F322C310C540057C65D /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +481,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADA4F472C310C560057C65D /* MarkStreamTests.swift in Sources */,
+				6AF76F4B2C311468000F58B8 /* TokenGranterTests.swift in Sources */,
+				6ADA4F622C310E5A0057C65D /* TokenGranter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -403,7 +609,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -421,6 +627,7 @@
 		};
 		6ADA4F572C310C560057C65D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806582BC9DF8465D37EAE670 /* Pods-MarkStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,8 +656,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +666,7 @@
 		};
 		6ADA4F582C310C560057C65D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9879899CFE69097BE6A6C4 /* Pods-MarkStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,8 +695,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ghaz.MarkStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,8 +705,8 @@
 		};
 		6ADA4F5A2C310C560057C65D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15AA06276152C7CEDBAC5B4F /* Pods-MarkStreamTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,8 +728,8 @@
 		};
 		6ADA4F5B2C310C560057C65D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A182CC4C7CB8942A6458E17E /* Pods-MarkStreamTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -543,6 +751,7 @@
 		};
 		6ADA4F5D2C310C560057C65D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B428BFD14EBCAE45E4E651 /* Pods-MarkStream-MarkStreamUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +774,7 @@
 		};
 		6ADA4F5E2C310C560057C65D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821F68B22391712D4EE2D7BE /* Pods-MarkStream-MarkStreamUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

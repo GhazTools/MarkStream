@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
+import KeychainSwift
 
 @main
 struct MarkStreamApp: App {
     let persistenceController = PersistenceController.shared
+    @State private var isAuthenticated =  (KeychainManager.shared.value(forKey: KeychainKeys.username) != nil) && (KeychainManager.shared.value(forKey: KeychainKeys.password) != nil)
+    
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if (isAuthenticated){
+                MainView()
+            }
+            else {
+                LoginView(isAuthenticated: $isAuthenticated)
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            }
         }
     }
 }

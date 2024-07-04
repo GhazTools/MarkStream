@@ -1,0 +1,6 @@
+framework module Pods_MarkStream_MarkStreamUITests {
+  umbrella header "Pods-MarkStream-MarkStreamUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
