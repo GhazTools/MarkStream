@@ -21,4 +21,4 @@ jobs:
           APP_USERNAME: ${{ secrets.APP_USERNAME }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: |
-          xcodebuild test -scheme MarkStreamTests -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.5' -enableCodeCoverage YES
+          xcodebuild test -workspace MarkStream.xcworkspace -scheme MarkStreamTests -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.5' -enableCodeCoverage YES
