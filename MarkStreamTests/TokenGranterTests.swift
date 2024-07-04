@@ -18,21 +18,25 @@ class TokenGranterTests: XCTestCase {
         super.setUp()
         
         // Read local.config
-        if(self.username.isEmpty){
-            let configPath = Bundle.main.path(forResource: "local", ofType: "config") // Adjust the path as necessary
-            if let configPath = configPath, let configContents = try? String(contentsOfFile: configPath) {
-                let lines = configContents.split(separator: "\n")
-                var configDict = [String: String]()
-                lines.forEach { line in
-                    let parts = line.split(separator: "=", maxSplits: 1).map { String($0) }
-                    if parts.count == 2 {
-                        configDict[parts[0]] = parts[1]
-                    }
-                }
-                self.username = configDict["APP_USERNAME"] ?? ""
-                self.password = configDict["APP_PASSWORD"] ?? ""
-            }
-        }
+        
+        self.username = ProcessInfo.processInfo.environment["APP_USERNAME"] ?? "";
+        self.password = ProcessInfo.processInfo.environment["APP_PASSWORD"] ?? "";
+
+//        if(self.username.isEmpty){
+//            let configPath = Bundle.main.path(forResource: "local", ofType: "config") // Adjust the path as necessary
+//            if let configPath = configPath, let configContents = try? String(contentsOfFile: configPath) {
+//                let lines = configContents.split(separator: "\n")
+//                var configDict = [String: String]()
+//                lines.forEach { line in
+//                    let parts = line.split(separator: "=", maxSplits: 1).map { String($0) }
+//                    if parts.count == 2 {
+//                        configDict[parts[0]] = parts[1]
+//                    }
+//                }
+//                self.username = configDict["APP_USERNAME"] ?? ""
+//                self.password = configDict["APP_PASSWORD"] ?? ""
+//            }
+//        }
 
         tokenGranter = TokenGranter(username: self.username, password: self.password)
     }
