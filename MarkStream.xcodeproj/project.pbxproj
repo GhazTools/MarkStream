@@ -13,10 +13,8 @@
 		6A8BC28A2C33AF3500200875 /* ObsidianRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */; };
 		6A8BC28C2C363C2F00200875 /* ObsidianFileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC28B2C363C2F00200875 /* ObsidianFileContentView.swift */; };
 		6A8BC28E2C36418E00200875 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC28D2C36418E00200875 /* MarkdownView.swift */; };
-		6A8BC2902C36509A00200875 /* local.config in Resources */ = {isa = PBXBuildFile; fileRef = 6A8BC28F2C36509A00200875 /* local.config */; };
 		6A8BC2912C3651B000200875 /* ObsidianRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */; };
 		6A8BC2922C3651B300200875 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2872C33A7FE00200875 /* KeychainManager.swift */; };
-		6A8BC2932C3651CD00200875 /* local.config in Resources */ = {isa = PBXBuildFile; fileRef = 6A8BC28F2C36509A00200875 /* local.config */; };
 		6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */; };
 		6ADA4F322C310C540057C65D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F312C310C540057C65D /* Persistence.swift */; };
 		6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */; };
@@ -340,7 +338,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8BC2902C36509A00200875 /* local.config in Resources */,
 				6ADA4F3D2C310C550057C65D /* Preview Assets.xcassets in Resources */,
 				6ADA4F392C310C550057C65D /* Assets.xcassets in Resources */,
 			);
@@ -350,7 +347,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8BC2932C3651CD00200875 /* local.config in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
