@@ -55,6 +55,10 @@ struct LoginView: View {
                 .padding()
                 .disabled(isAuthenticating) // Disable input during authentication
             
+            if (isAuthenticating) {
+                LoadingView(isLoading: self.$isAuthenticating)
+            }
+            
             
             Button(action: {
                 // Implement your login logic here
@@ -70,6 +74,7 @@ struct LoginView: View {
                     if(validated){
                         KeychainManager.shared.save(self.username, forKey: KeychainKeys.username)
                         KeychainManager.shared.save(self.password, forKey: KeychainKeys.password)
+                        self.isAuthenticating = false;
                     }
                     else {
                         self.showError = true;

@@ -20,6 +20,9 @@ struct MarkdownFileContentView: View {
     var fileName: String
     
     @State var markdownDetailedContents: [FileContentsDetailed] = []
+    @State private var isLoading = false
+    
+    var activityIndicator = UIActivityIndicatorView(style: .large)
     
     public func getFileContents() async {
         let markdownContentsDetailedResponse: GetFileContentsDetailedResponse = await ObsidianFileRetriever.shared.getFileContentsDetailed(file_name: fileName)
@@ -53,6 +56,11 @@ struct MarkdownFileContentView: View {
     }
     
     var body: some View {
+        
+        if self.isLoading {
+            LoadingView(isLoading: self.$isLoading)
+        }
+        
         ScrollView{
             ForEach($markdownDetailedContents, id: \.self) { data in
                 let data_attribute = data.attribute.wrappedValue
@@ -69,7 +77,9 @@ struct MarkdownFileContentView: View {
             }
         }
         .task{
+            self.isLoading = true;
             await getFileContents()
+            self.isLoading = false;
         }
     }
 }

@@ -31,6 +31,7 @@
 		6ADA4F612C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
 		6ADA4F622C310E5A0057C65D /* TokenGranter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA4F602C310E5A0057C65D /* TokenGranter.swift */; };
 		6AFE8B062C377DAC00505FB4 /* MarkdownContentCodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE8B052C377DAC00505FB4 /* MarkdownContentCodeBlockView.swift */; };
+		6AFE8B092C37875A00505FB4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE8B082C37875A00505FB4 /* LoadingView.swift */; };
 		DBF54C8F88CE1A6935537536 /* Pods_MarkStreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307F8E4592169F875B6DB278 /* Pods_MarkStreamTests.framework */; };
 		DC0AAF555E8BF0FC918EE8BE /* Pods_MarkStream_MarkStreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27809D0FB8BF2A33A1821AF /* Pods_MarkStream_MarkStreamUITests.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		6AF76F4C2C311608000F58B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF76F502C311611000F58B8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFE8B052C377DAC00505FB4 /* MarkdownContentCodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownContentCodeBlockView.swift; sourceTree = "<group>"; };
+		6AFE8B082C37875A00505FB4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		806582BC9DF8465D37EAE670 /* Pods-MarkStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream.debug.xcconfig"; path = "Target Support Files/Pods-MarkStream/Pods-MarkStream.debug.xcconfig"; sourceTree = "<group>"; };
 		821F68B22391712D4EE2D7BE /* Pods-MarkStream-MarkStreamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStream-MarkStreamUITests.release.xcconfig"; path = "Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A182CC4C7CB8942A6458E17E /* Pods-MarkStreamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkStreamTests.release.xcconfig"; path = "Target Support Files/Pods-MarkStreamTests/Pods-MarkStreamTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,11 +200,12 @@
 			children = (
 				6A8BC28F2C36509A00200875 /* local.config */,
 				6A8BC2852C33A65F00200875 /* MainEntryView */,
-				6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */,
+				6AFE8B072C37872800505FB4 /* HelperViews */,
 				6ADA4F312C310C540057C65D /* Persistence.swift */,
-				6ADA4F382C310C550057C65D /* Assets.xcassets */,
+				6ADA4F2F2C310C540057C65D /* MarkStreamApp.swift */,
 				6ADA4F3A2C310C550057C65D /* MarkStream.entitlements */,
 				6ADA4F332C310C540057C65D /* MarkStream.xcdatamodeld */,
+				6ADA4F382C310C550057C65D /* Assets.xcassets */,
 				6ADA4F5F2C310E3C0057C65D /* ServerRequester */,
 				6A8BC2862C33A7EF00200875 /* Utils */,
 				6ADA4F3B2C310C550057C65D /* Preview Content */,
@@ -243,6 +246,14 @@
 				6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */,
 			);
 			path = ServerRequester;
+			sourceTree = "<group>";
+		};
+		6AFE8B072C37872800505FB4 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				6AFE8B082C37875A00505FB4 /* LoadingView.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 		E11114792E1B23E2065E0A66 /* Frameworks */ = {
@@ -503,6 +514,7 @@
 				6A37D51C2C377440002AFD0A /* MarkdownContentOtherView.swift in Sources */,
 				6A37D5152C376FB9002AFD0A /* MarkdownFileHeaderView.swift in Sources */,
 				6A8BC28A2C33AF3500200875 /* ObsidianRequester.swift in Sources */,
+				6AFE8B092C37875A00505FB4 /* LoadingView.swift in Sources */,
 				6ADA4F302C310C540057C65D /* MarkStreamApp.swift in Sources */,
 				6A37D51A2C3773E3002AFD0A /* MarkdownContentListView.swift in Sources */,
 				6ADA4F352C310C540057C65D /* MarkStream.xcdatamodeld in Sources */,

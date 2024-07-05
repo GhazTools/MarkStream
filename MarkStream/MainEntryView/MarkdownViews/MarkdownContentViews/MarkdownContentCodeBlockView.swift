@@ -40,8 +40,8 @@ struct MarkdownContentCodeBlockView: View {
                                 .font(.subheadline)
                         }
                     }
-                    .onChange(of: theme) { newTheme in
-                        highlightr?.setTheme(to: newTheme)
+                    .onChange(of: theme) {
+                        highlightr?.setTheme(to: theme)
                         highlightedCode = highlightr?.highlight(codeString) ?? NSAttributedString(string: "")
                     }
                     Spacer()
