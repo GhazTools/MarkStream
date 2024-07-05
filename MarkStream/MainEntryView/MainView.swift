@@ -13,41 +13,45 @@ struct MainView: View {
     @State private var searchText: String = "" // 1. Add search text state
 
     @State private var isLoading: Bool = false
+    
+    func filterFileNames(searchText: String) -> [String] {
+        if searchText.isEmpty {
+            return  fileNames
+        } else {
+            return  fileNames.filter { $0.lowercased().contains(searchText.lowercased()) }
+        }
+    }
+    
 
-       var body: some View {
-           NavigationView {
-               VStack{
-                   if (self.isLoading) {
-                       LoadingView(isLoading: self.$isLoading)
-                   }
-                   
-                   List(self.filteredFileNames, id: \.self) { fileName in
-                       NavigationLink(destination: MarkdownFileView(fileName: fileName)) {
-                           Text(fileName)
-                       }
-                   }
-               }
-               .searchable(text: $searchText, prompt: "Search files") // 2. Add searchable modifier
-               .onChange(of: searchText) {
-                   if searchText.isEmpty {
-                       self.filteredFileNames = fileNames
-                   } else {
-                       self.filteredFileNames = fileNames.filter { $0.lowercased().contains(searchText.lowercased()) }
-                   }
-               }
-               .task {
-                   self.isLoading = true
-
-                   let response = await ObsidianFileRetriever.shared.getFileList()
-                   self.fileNames = response.file_names ?? [""]
-                   self.filteredFileNames = self.fileNames
-
-                   
-                   self.isLoading = false
+    var body: some View {
+       NavigationView {
+           VStack{
+               if (self.isLoading) {
+                   LoadingView(isLoading: self.$isLoading)
                }
                
+               List(self.filteredFileNames, id: \.self) { fileName in
+                   NavigationLink(destination: MarkdownFileView(fileName: fileName)) {
+                       Text(fileName)
+                   }
+               }
            }
+           .searchable(text: $searchText, prompt: "Search files") // 2. Add searchable modifier
+           .onChange(of: searchText) {
+               self.filteredFileNames = filterFileNames(searchText: searchText)
+           }
+           .task {
+               self.isLoading = true
+
+               let response = await ObsidianFileRetriever.shared.getFileList()
+               self.fileNames = response.file_names ?? [""]
+               self.filteredFileNames = filterFileNames(searchText: self.searchText)
+               
+               self.isLoading = false
+           }
+           
        }
+    }
 }
 
 #Preview {

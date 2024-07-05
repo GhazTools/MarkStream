@@ -56,23 +56,24 @@ struct MarkdownFileContentView: View {
     }
     
     var body: some View {
-        
-        if self.isLoading {
-            LoadingView(isLoading: self.$isLoading)
-        }
-        
         ScrollView{
-            ForEach($markdownDetailedContents, id: \.self) { data in
-                let data_attribute = data.attribute.wrappedValue
-                
-                switch data_attribute {
-                case "list":
-                    MarkdownContentListView(mdList: data.lines.wrappedValue)
-                case "code-block":
-                    MarkdownContentCodeBlockView(codeString: linesToCodeString(lines: data.lines.wrappedValue), language: data.information.wrappedValue[0], theme: THEMES[7])
-                default:
-                    MarkdownContentOtherView(lines: data.lines.wrappedValue, attribute: data.attribute.wrappedValue, information: data.information.wrappedValue[0])
 
+            if self.isLoading {
+                LoadingView(isLoading: self.$isLoading)
+            }
+            else {
+                ForEach($markdownDetailedContents, id: \.self) { data in
+                    let data_attribute = data.attribute.wrappedValue
+                    
+                    switch data_attribute {
+                    case "list":
+                        MarkdownContentListView(mdList: data.lines.wrappedValue)
+                    case "code-block":
+                        MarkdownContentCodeBlockView(codeString: linesToCodeString(lines: data.lines.wrappedValue), language: data.information.wrappedValue[0], theme: THEMES[7])
+                    default:
+                        MarkdownContentOtherView(lines: data.lines.wrappedValue, attribute: data.attribute.wrappedValue, information: data.information.wrappedValue[0])
+                        
+                    }
                 }
             }
         }
