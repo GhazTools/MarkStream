@@ -2,7 +2,7 @@
 
 ## Description
 
-An IOS applicaiton used to view markdown files
+An IOS application used to view markdown files
 
 ## How to Run Locally
 
