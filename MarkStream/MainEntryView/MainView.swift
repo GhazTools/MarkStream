@@ -16,9 +16,9 @@ struct MainView: View {
     
     func filterFileNames(searchText: String) -> [String] {
         if searchText.isEmpty {
-            return  fileNames
+            return fileNames
         } else {
-            return  fileNames.filter { $0.lowercased().contains(searchText.lowercased()) }
+            return fileNames.filter { $0.lowercased().contains(searchText.lowercased()) }
         }
     }
     
