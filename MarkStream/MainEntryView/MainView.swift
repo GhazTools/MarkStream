@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     @State private var fileNames: [String] = []
     @State private var filteredFileNames: [String] = []
-    @State private var searchText: String = "" // 1. Add search text state
+    @State private var searchText: String = ""
 
     @State private var isLoading: Bool = false
     
@@ -36,7 +36,7 @@ struct MainView: View {
                    }
                }
            }
-           .searchable(text: $searchText, prompt: "Search files") // 2. Add searchable modifier
+           .searchable(text: $searchText, prompt: "Search files")
            .onChange(of: searchText) {
                self.filteredFileNames = filterFileNames(searchText: searchText)
            }
