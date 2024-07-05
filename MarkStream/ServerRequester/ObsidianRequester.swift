@@ -51,9 +51,11 @@ struct GetFileContentsDetailedRequest: Encodable {
 
 struct GetFileContentsDetailedResponse: Decodable {
     struct markdown_object: Codable {
-        var _lines: [String];
-        var _index: Int;
-        var _attribute: String;
+        var _lines: [String]
+        var _index: Int
+        var _attribute: String
+        var _raw_line: [String]
+        var _information: [String]
     };
     
     var file_contents: [markdown_object]?;

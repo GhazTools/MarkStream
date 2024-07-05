@@ -6,6 +6,36 @@
 //
 
 import SwiftUI
+import UIKit
+
+
+struct MarkdownCodeBlockInit: View {
+    @State var lines: [String] = []
+    @State var information: [String] = []
+    @State var theme: String
+    
+    
+//    public func createCodeString() -> String {
+//        var codeString: String = ""
+//        
+//        for (index, line) in lines.enumerated() {
+//            if(index == 0 || index == lines.count){
+//                continue
+//            }
+//            codeString += line + "\n"
+//            
+//        }
+//
+//        return codeString
+//    }
+//    
+    
+    var body: some View {
+        Text("TEST")
+//        MarkdownCodeBlockView(codeString: createCodeString(), language: information[0], theme: theme)
+    }
+
+}
 
 struct MarkdownList: View {
     @Environment(\.defaultMinListRowHeight) var minRowHeight
@@ -86,6 +116,7 @@ struct ObsidianMarkdownView: View {
         var attribute: String
     }
     
+    @State var theme: String = ""
     @State var markdownDetailedContents: [fileContentsDetailed] = []
     
     public func getFileContents() async {
@@ -101,6 +132,20 @@ struct ObsidianMarkdownView: View {
                 )
             )
         }
+    }
+    
+    public func createCodeString(lines: [String]) -> String {
+        var codeString: String = ""
+        
+        for (index, line) in lines.enumerated() {
+            if(index == 0 || index == lines.count){
+                continue
+            }
+            codeString += line + "\n"
+            
+        }
+
+        return codeString
     }
     
     var body: some View {
@@ -126,12 +171,10 @@ struct ObsidianMarkdownView: View {
                 Text(fileName)
                     .fontWeight(.black)
                 
-//                NavigationLink(destination: ObsidianMarkdownEditor(fileName: fileName)) {
-//                    Label("", systemImage: "pencil")
-//                        .foregroundColor(textColor)
-//                }
+                    Label("", systemImage: "pencil")
+                }
             }
-        }
+        
         
         ScrollView{
             ForEach(markdownDetailedContents, id: \.self) { data in
@@ -142,11 +185,7 @@ struct ObsidianMarkdownView: View {
                     MarkdownObjectView(lines: data.lines, attribute: data.attribute)
                 }
             }
-            .task{
-                await getFileContents()
-            }
         }
-               
     }
 }
 

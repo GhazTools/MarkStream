@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '17.5'
+platform :ios, '17.0'
 
 target 'MarkStream' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,6 +8,7 @@ target 'MarkStream' do
   # Pods for MarkStream
   pod 'Alamofire'
   pod 'KeychainSwift'
+  pod "Highlightr"
 
   target 'MarkStreamTests' do
     inherit! :search_paths

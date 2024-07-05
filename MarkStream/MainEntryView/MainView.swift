@@ -14,7 +14,7 @@ struct MainView: View {
            NavigationView {
                
                List(self.fileNames, id: \.self) { fileName in
-                   NavigationLink(destination: ObsidianMarkdownView(fileName: fileName)) {
+                   NavigationLink(destination: MarkdownFileView(fileName: fileName)) {
                        Text(fileName)
                    }
                }
