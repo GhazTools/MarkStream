@@ -18,7 +18,7 @@ struct LoginView: View {
     
     func validate_user() async -> Bool {
         let setCorrectly = TokenGranter.shared.set_username_and_password(username: self.username, password: self.password);
-        
+                
         if(setCorrectly){
             return await TokenGranter.shared.grant_access_token();
         }
@@ -62,13 +62,13 @@ struct LoginView: View {
             
             Button(action: {
                 // Implement your login logic here
-                print("Login button tapped")
                 self.isAuthenticating = true // Disable inputs and button
                 
                 
                 Task {
                     let validated: Bool = await validate_user()
                     self.isAuthenticated = validated;
+                    self.showError = false;
 
                     
                     if(validated){
@@ -94,7 +94,6 @@ struct LoginView: View {
             
         }
         .padding()
-        
     }
 }
 

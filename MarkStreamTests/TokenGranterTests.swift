@@ -17,12 +17,12 @@ class TokenGranterTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        // Read local.config
-        
+    
+
         self.username = ProcessInfo.processInfo.environment["APP_USERNAME"] ?? "";
         self.password = ProcessInfo.processInfo.environment["APP_PASSWORD"] ?? "";
         
-        // TURN ON FOR LOCLA TESTING, ENABLE loca.confog targets for markstream
+//         // TURN ON FOR LOCAL TESTING, ENABLE loca.confog targets for markstream
 //        if(self.username.isEmpty){
 //            let configPath = Bundle.main.path(forResource: "local", ofType: "config") //
 //            

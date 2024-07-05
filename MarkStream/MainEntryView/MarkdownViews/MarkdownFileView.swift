@@ -20,3 +20,4 @@ struct MarkdownFileView: View {
     MarkdownFileView(fileName: "Some File Here")
         .preferredColorScheme(.dark)
 }
+

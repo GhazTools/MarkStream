@@ -61,7 +61,7 @@ class TokenGranter {
     
     
     public func set_username_and_password(username: String, password: String) -> Bool {
-        if(self.username().isEmpty || self.password().isEmpty){
+        if(username.isEmpty || password.isEmpty){
             return false;
         }
         
@@ -124,7 +124,7 @@ class TokenGranter {
                 }
             }
         }
-//        
+
 //        return await withCheckedContinuation { continuation in
 //            AF.request(
 //                grantTokenUrl,
