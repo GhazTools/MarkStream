@@ -7,45 +7,16 @@
 
 import SwiftUI
 
-struct FileContentsDetailed: Identifiable, Codable, Hashable {
-    var id = UUID()
-    var lines: [String]
-    var attribute: String
-    var index: Int
-    var information: [String]
-    var raw_lins: [String]
-}
-
 struct MarkdownFileContentView: View {
     var fileName: String
     
-    @State var markdownDetailedContents: [FileContentsDetailed] = []
-    @State private var isLoading = false
-    
-    var activityIndicator = UIActivityIndicatorView(style: .large)
-    
-    public func getFileContents() async {
-        let markdownContentsDetailedResponse: GetFileContentsDetailedResponse = await ObsidianFileRetriever.shared.getFileContentsDetailed(file_name: fileName)
-                
-    
-        for data in markdownContentsDetailedResponse.file_contents ?? [] {
-            markdownDetailedContents.append(
-                FileContentsDetailed(
-                    lines: data._lines,
-                    attribute: data._attribute,
-                    index: data._index,
-                    information: data._information,
-                    raw_lins: data._raw_line
-                )
-            )
-        }
-    }
+    @StateObject private var viewModel = MarkdownFileContentViewModel()
     
     public func linesToCodeString(lines: [String]) -> String {
         var codeString: String = ""
         
         for (index, line) in lines.enumerated() {
-            if(index == 0 || index == lines.count){
+            if(index == 0 || index == lines.count - 1) {
                 continue
             }
             codeString += line + "\n"
@@ -57,30 +28,26 @@ struct MarkdownFileContentView: View {
     
     var body: some View {
         ScrollView{
-
-            if self.isLoading {
-                LoadingView(isLoading: self.$isLoading)
+            if viewModel.isLoading {
+                LoadingView(isLoading: .constant(true))
             }
             else {
-                ForEach($markdownDetailedContents, id: \.self) { data in
-                    let data_attribute = data.attribute.wrappedValue
+                ForEach(viewModel.items, id: \.self) { data in
+                    let data_attribute = data.attribute
                     
                     switch data_attribute {
                     case "list":
-                        MarkdownContentListView(mdList: data.lines.wrappedValue)
+                        MarkdownContentListView(mdList: data.lines)
                     case "code-block":
-                        MarkdownContentCodeBlockView(codeString: linesToCodeString(lines: data.lines.wrappedValue), language: data.information.wrappedValue[0], theme: THEMES[7])
+                        MarkdownContentCodeBlockView(codeString: linesToCodeString(lines: data.lines), language: data.information.first ?? "", theme: THEMES[7])
                     default:
-                        MarkdownContentOtherView(lines: data.lines.wrappedValue, attribute: data.attribute.wrappedValue, information: data.information.wrappedValue[0])
-                        
+                        MarkdownContentOtherView(lines: data.lines, attribute: data.attribute, information: data.information.first ?? "")
                     }
                 }
             }
         }
-        .task{
-            self.isLoading = true;
-            await getFileContents()
-            self.isLoading = false;
+        .task {
+            await viewModel.load(fileName: fileName)
         }
     }
 }

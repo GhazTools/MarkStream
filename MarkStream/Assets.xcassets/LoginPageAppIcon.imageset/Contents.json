@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "markstream_full512_512.png",
+      "filename" : "markstream512_512.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "markstream512_512 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "markstream512_512 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

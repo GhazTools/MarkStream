@@ -13,6 +13,7 @@
 		6A37D5172C3771D0002AFD0A /* MarkdownFileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37D5162C3771D0002AFD0A /* MarkdownFileContentView.swift */; };
 		6A37D51A2C3773E3002AFD0A /* MarkdownContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37D5192C3773E3002AFD0A /* MarkdownContentListView.swift */; };
 		6A37D51C2C377440002AFD0A /* MarkdownContentOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37D51B2C377440002AFD0A /* MarkdownContentOtherView.swift */; };
+		6A69BAA22ED3DBF500A0DEC4 /* ObsidianFileRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A69BAA12ED3DBF500A0DEC4 /* ObsidianFileRetrieving.swift */; };
 		6A8BC2842C337D3B00200875 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2832C337D3B00200875 /* MainView.swift */; };
 		6A8BC2882C33A7FE00200875 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2872C33A7FE00200875 /* KeychainManager.swift */; };
 		6A8BC28A2C33AF3500200875 /* ObsidianRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */; };
@@ -63,6 +64,7 @@
 		6A37D5162C3771D0002AFD0A /* MarkdownFileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownFileContentView.swift; sourceTree = "<group>"; };
 		6A37D5192C3773E3002AFD0A /* MarkdownContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownContentListView.swift; sourceTree = "<group>"; };
 		6A37D51B2C377440002AFD0A /* MarkdownContentOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownContentOtherView.swift; sourceTree = "<group>"; };
+		6A69BAA12ED3DBF500A0DEC4 /* ObsidianFileRetrieving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianFileRetrieving.swift; sourceTree = "<group>"; };
 		6A8BC2832C337D3B00200875 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6A8BC2872C33A7FE00200875 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		6A8BC2892C33AF3500200875 /* ObsidianRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianRequester.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				6ADA4F5F2C310E3C0057C65D /* ServerRequester */,
 				6A8BC2862C33A7EF00200875 /* Utils */,
 				6ADA4F3B2C310C550057C65D /* Preview Content */,
+				6A69BAA12ED3DBF500A0DEC4 /* ObsidianFileRetrieving.swift */,
 			);
 			path = MarkStream;
 			sourceTree = "<group>";
@@ -407,9 +410,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MarkStream/Pods-MarkStream-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MarkStream/Pods-MarkStream-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,9 +431,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MarkStream-MarkStreamUITests/Pods-MarkStream-MarkStreamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,6 +532,7 @@
 				6ADA4F372C310C540057C65D /* LoginView.swift in Sources */,
 				6ADA4F322C310C540057C65D /* Persistence.swift in Sources */,
 				6A37D5132C376FA7002AFD0A /* MarkdownFileView.swift in Sources */,
+				6A69BAA22ED3DBF500A0DEC4 /* ObsidianFileRetrieving.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
